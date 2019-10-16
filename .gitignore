@@ -1,0 +1,5 @@
+*.org
+figures/*.mov
+figures/*.sh
+figures/palette.png
+opsnr.stt
