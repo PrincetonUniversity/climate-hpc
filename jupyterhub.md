@@ -1,13 +1,13 @@
 
 # Table of Contents
 
-1.  [First time setting](#orgefdcab8)
-2.  [Accessing data on `/project` or `/scratch/pgfs`](#orgeb6ddfe)
-3.  [Uploading Files](#orge3c6ab4)
-4.  [Downloading Files](#org8bf41cf)
+1.  [First time setting](#org61c1b22)
+2.  [Accessing data on `/project` or `/scratch/pgfs`](#orgea5b054)
+3.  [Uploading Files](#org24ef564)
+4.  [Downloading Files](#org2f209d4)
 
 
-<a id="orgefdcab8"></a>
+<a id="org61c1b22"></a>
 
 # First time setting
 
@@ -21,7 +21,7 @@
     ![img](./figures/spawn-image-raw-video.gif)
 
 
-<a id="orgeb6ddfe"></a>
+<a id="orgea5b054"></a>
 
 # Accessing data on `/project` or `/scratch/pgfs`
 
@@ -32,7 +32,7 @@
     You can do this by opening a terminal by clicking on `New` then `Terminal`.
     
         $ ln -s /projects/GEOCLIM projects
-        $ ln -s /tiger/scratch/gpfs gpfs
+        $ ln -s /tiger/scratch/gpfs/GEOCLIM gpfs
     
     ![img](./figures/symlinks.gif)
 -   After this, the directories `projects` and `gpfs` will be in your
@@ -40,7 +40,7 @@
     ![img](./figures/symlinks-in-browser.png)
 
 
-<a id="orge3c6ab4"></a>
+<a id="org24ef564"></a>
 
 # Uploading Files
 
@@ -48,7 +48,7 @@ To upload a file click `Upload`
   ![img](./figures/upload.gif)
 
 
-<a id="org8bf41cf"></a>
+<a id="org2f209d4"></a>
 
 # Downloading Files
 
