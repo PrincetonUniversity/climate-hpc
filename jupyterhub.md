@@ -18,7 +18,7 @@
     ![img](./figures/PU_authenticate.png)
 -   In `Spawner options` select `Anaconda3 2019.07 in home directory -
       Climate Modeling`.  Note that the building the image the first time
-    will take about 3 min. Afterthe first build it will be faster.
+    will take about 3 min. After the first build it will be faster.
     ![img](./figures/spawn-image-raw-video.gif)
 
 
