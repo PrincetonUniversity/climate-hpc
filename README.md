@@ -1,20 +1,20 @@
 
 # Table of Contents
 
-1.  [Getting an Account on the Computers](#org9e9f36f)
-2.  [Using the Computers](#orgea350d2)
-    1.  [Which Computer Should I Use for My Research Project?](#orgf09f125)
-    2.  [Logging in to the Computers](#org3e73dfe)
-    3.  [tigercpu or tigressdata: use an ssh client](#org2c47a6b)
-    4.  [Jupyterhub](#org9039ad0)
-    5.  [Connecting from off-campus: use the VPN](#orgd3fdeb9)
-    6.  [What is your username? Princeton NetID](#orgd7eaf38)
-    7.  [Using the Computers](#org853e24b)
-        1.  [The Operating System: Linux](#org1b6498b)
-        2.  [Using a Remote Desktop on tigressdata: TurboVNC](#org22089c5)
+1.  [Getting an Account on the Computers](#org0e67687)
+2.  [Using the Computers](#org435f705)
+    1.  [Which Computer Should I Use for My Research Project?](#org2b8a188)
+    2.  [Logging in to the Computers](#orgf58c32e)
+        1.  [tigercpu or tigressdata: use an ssh client](#orgeab0dcf)
+        2.  [Jupyterhub](#org595db96)
+        3.  [Connecting from off-campus: use the VPN](#org1b02e31)
+        4.  [What is your username? Princeton NetID](#orgc2ca4a1)
+    3.  [Using the Computers](#org64d1948)
+        1.  [The Operating System: Linux](#org0e19d03)
+        2.  [Using a Remote Desktop on tigressdata: TurboVNC](#orgd4d9316)
 
 
-<a id="org9e9f36f"></a>
+<a id="org0e67687"></a>
 
 # Getting an Account on the Computers
 
@@ -28,12 +28,12 @@ An account on the `tigercpu` cluster gives you access to:
 -   `jupyter.rc`: a JupyterHub host.
 
 
-<a id="orgea350d2"></a>
+<a id="org435f705"></a>
 
 # Using the Computers
 
 
-<a id="orgf09f125"></a>
+<a id="org2b8a188"></a>
 
 ## Which Computer Should I Use for My Research Project?
 
@@ -64,14 +64,14 @@ So where should you start?
 -   **TODO: Add decision graph**.
 
 
-<a id="org3e73dfe"></a>
+<a id="orgf58c32e"></a>
 
 ## Logging in to the Computers
 
 
-<a id="org2c47a6b"></a>
+<a id="orgeab0dcf"></a>
 
-## tigercpu or tigressdata: use an ssh client
+### tigercpu or tigressdata: use an ssh client
 
 You log in to either `tigercpu` or `tigressdata` through the `ssh` protocol. The remote
 machines run the `ssh` server and you use an `ssh` client to it.
@@ -96,9 +96,9 @@ When you connecting on a remote host you may need to use the FQDN (Fully Qualifi
 -   `tigressdata.princeton.edu`.
 
 
-<a id="org9039ad0"></a>
+<a id="org595db96"></a>
 
-## Jupyterhub
+### Jupyterhub
 
 `Jupyterhub` web based and you access it by simply going to
 <https://jupyter.rc.princeton.edu/hub/home>
@@ -109,9 +109,9 @@ This section:
 explains how to run Jupyter notebooks on `jupyterhub`.
 
 
-<a id="orgd3fdeb9"></a>
+<a id="org1b02e31"></a>
 
-## Connecting from off-campus: use the VPN
+### Connecting from off-campus: use the VPN
 
 You can only access `tigercpu`, `tigressdata` or `jupyterhub` in either of two scenarios:
 
@@ -124,9 +124,9 @@ You can only access `tigercpu`, `tigressdata` or `jupyterhub` in either of two s
     The [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) in the Frist Campus Center can help you install the VPN on your machine.
 
 
-<a id="orgd7eaf38"></a>
+<a id="orgc2ca4a1"></a>
 
-## What is your username? Princeton NetID
+### What is your username? Princeton NetID
 
 Your username on the Research Computing machines is your Princeton NetID.
 
@@ -141,12 +141,12 @@ and search for your name, click on the `People` result, look for the `NetID` fie
 ![img](./figures/find-my-netid.gif)
 
 
-<a id="org853e24b"></a>
+<a id="org64d1948"></a>
 
 ## Using the Computers
 
 
-<a id="org1b6498b"></a>
+<a id="org0e19d03"></a>
 
 ### The Operating System: Linux
 
@@ -179,7 +179,7 @@ You should spend some time learning the fundamentals of using the command line, 
     -   [O'Reilly: Linnux command line](https://learning.oreilly.com/videos/linux-command-line/9780134445533): Princeton University has a subscription to O'Reilly.
 
 
-<a id="org22089c5"></a>
+<a id="orgd4d9316"></a>
 
 ### Using a Remote Desktop on tigressdata: TurboVNC
 
