@@ -278,13 +278,13 @@ Download your dataset to a location on your harddrive (e.g. `~/Downloads`).
 
 From there you can copy the file to the remote filesystem by using
 ```
-scp ~/Downloads/<yourfile> <username>@tigressdata.princeton.edu:/tigress/<username>/`
+scp ~/Downloads/<yourfile> <username>@tigressdata.princeton.edu:/tigress/<username>/
 ```
 The words in `<...>` need to be replaced with specific filesnames and your princeton username.
 If you have set up SSH keys (e.g. if you log into `tigressdata` with `ssh tigressdata`),
 you can simplify the command above to:
 ```
-scp ~/Downloads/<yourfile> tigressdata:/tigress/<username>/`
+scp ~/Downloads/<yourfile> tigressdata:/tigress/<username>/
 ```
 Now the file is in your folder on tigress and you can load it into your jupyter notebook,
 by using the path `/tigress/<username>/<yourfile>`.
