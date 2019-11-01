@@ -1,20 +1,21 @@
 
 # Table of Contents
 
-1.  [Getting an Account on the Computers](#org0e67687)
-2.  [Using the Computers](#org435f705)
-    1.  [Which Computer Should I Use for My Research Project?](#org2b8a188)
-    2.  [Logging in to the Computers](#orgf58c32e)
-        1.  [tigercpu or tigressdata: use an ssh client](#orgeab0dcf)
-        2.  [Jupyterhub](#org595db96)
-        3.  [Connecting from off-campus: use the VPN](#org1b02e31)
-        4.  [What is your username? Princeton NetID](#orgc2ca4a1)
-    3.  [Using the Computers](#org64d1948)
-        1.  [The Operating System: Linux](#org0e19d03)
-        2.  [Using a Remote Desktop on tigressdata: TurboVNC](#orgd4d9316)
+1.  [Getting an Account on the Computers](#org71ddab1)
+2.  [Using the Computers](#org5048b76)
+    1.  [Which Computer Should I Use for My Research Project?](#org6ee7904)
+    2.  [Logging in to the Computers](#orge4299b9)
+        1.  [tigercpu or tigressdata: use an ssh client](#org88ab6f5)
+        2.  [Jupyterhub](#org77c7583)
+        3.  [Connecting from off-campus: use the VPN](#org122dc44)
+        4.  [What is your username? Princeton NetID](#org2067966)
+    3.  [Using the Computers](#org3451942)
+        1.  [The Operating System: Linux](#org50d1643)
+        2.  [Using a Remote Desktop on tigressdata: TurboVNC](#org9da15c9)
+    4.  [Data Storage](#org4c1c2b6)
 
 
-<a id="org0e67687"></a>
+<a id="org71ddab1"></a>
 
 # Getting an Account on the Computers
 
@@ -28,12 +29,12 @@ An account on the `tigercpu` cluster gives you access to:
 -   `jupyter.rc`: a JupyterHub host.
 
 
-<a id="org435f705"></a>
+<a id="org5048b76"></a>
 
 # Using the Computers
 
 
-<a id="org2b8a188"></a>
+<a id="org6ee7904"></a>
 
 ## Which Computer Should I Use for My Research Project?
 
@@ -64,12 +65,12 @@ So where should you start?
 -   **TODO: Add decision graph**.
 
 
-<a id="orgf58c32e"></a>
+<a id="orge4299b9"></a>
 
 ## Logging in to the Computers
 
 
-<a id="orgeab0dcf"></a>
+<a id="org88ab6f5"></a>
 
 ### tigercpu or tigressdata: use an ssh client
 
@@ -96,7 +97,7 @@ When you connecting on a remote host you may need to use the FQDN (Fully Qualifi
 -   `tigressdata.princeton.edu`.
 
 
-<a id="org595db96"></a>
+<a id="org77c7583"></a>
 
 ### Jupyterhub
 
@@ -109,7 +110,7 @@ This section:
 explains how to run Jupyter notebooks on `jupyterhub`.
 
 
-<a id="org1b02e31"></a>
+<a id="org122dc44"></a>
 
 ### Connecting from off-campus: use the VPN
 
@@ -124,7 +125,7 @@ You can only access `tigercpu`, `tigressdata` or `jupyterhub` in either of two s
     The [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) in the Frist Campus Center can help you install the VPN on your machine.
 
 
-<a id="orgc2ca4a1"></a>
+<a id="org2067966"></a>
 
 ### What is your username? Princeton NetID
 
@@ -141,12 +142,12 @@ and search for your name, click on the `People` result, look for the `NetID` fie
 ![img](./figures/find-my-netid.gif)
 
 
-<a id="org64d1948"></a>
+<a id="org3451942"></a>
 
 ## Using the Computers
 
 
-<a id="org0e19d03"></a>
+<a id="org50d1643"></a>
 
 ### The Operating System: Linux
 
@@ -179,7 +180,7 @@ You should spend some time learning the fundamentals of using the command line, 
     -   [O'Reilly: Linnux command line](https://learning.oreilly.com/videos/linux-command-line/9780134445533): Princeton University has a subscription to O'Reilly.
 
 
-<a id="orgd4d9316"></a>
+<a id="org9da15c9"></a>
 
 ### Using a Remote Desktop on tigressdata: TurboVNC
 
@@ -203,4 +204,57 @@ To use `TurboVNC` you need to install and configure it. One good
 reference on how to use it on the RC systems is:
 [How do I use VNC on Tigressdata?](https://researchcomputing.princeton.edu/faq/how-do-i-use-vnc-on-tigre)
 The  [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) can also help you install it and use it on `tigressdata`
+
+
+<a id="org4c1c2b6"></a>
+
+## Data Storage
+
+There are multiple places where you can store the data for your project.
+There are two major types of storage:
+
+1.  storage that is reserved for a specific user,
+2.  storage that is shared with the climate modelling group.
+
+The storage locations reserved for user `NetID` are:
+
+-   `/home/NetID`: each of the three machines have their own `/home`
+    partitions that only a specifc machine can access.
+-   `/tigress/NetID` and `/scratch/gpfs/NetID`: all three machines share
+    these partitions. Note that `/scratch/gpfs/NetID` is accessed from
+    `tigressdata` and `jupyther` from `/tiger/scratch/gpfs/NetID`
+
+The storage locations shared by the group are:
+
+-   `/projects/GEOCLIM` and `/tigress/GEOCLIM`: `/tigress/GEOCLIM` is an
+    alias (a symbolic link) to `/projects/GEOCLIM`.
+-   `/scratch/gpfs/GEOCLIM`: Note that `/scratch/gpfs/GEOCLIM` is
+    accessed from `tigressdata` and `jupyther` from
+    `/tiger/scratch/gpfs/GEOCLIM`.
+
+The figure below shows the different storage locations as well the
+machines that can access them. A machine can access a storage location
+if it has an arrow pointing to it.
+
+![img](./figures/RC-storage.png)
+
+There are three factors that differentiate the filesystems `/home`, (`/tigress`, `/projects`) and `/scratch/gpfs`:
+
+1.  size: `/home` is limited, (`/tigress`, `/projects`) and
+    `/scratch/gpfs` are large.
+2.  speed of access: `/home/` and `/scratch/gpfs` are fast, `/tigress`
+    and `/projects` are slow.
+3.  backup: `/home` is backed up every day, `/tigress` and `/projects`
+    are backed weekly, `/scratch/gpfs` is not backed up.
+
+Selecting a location for your data can be overwhelming at first, so to
+get started, assuming that your are working in the Resplandy group,
+follow those steps:
+
+1.  Create your own directory in `/projects/GEOCLIM/LRGROUP` e.g.:
+    
+        $ mkdir /projects/GEOCLIM/LRGROUP/$USER
+    
+    where `$USER` should be automatically replaced by your `NetID`.
+2.  Store your data there.
 
