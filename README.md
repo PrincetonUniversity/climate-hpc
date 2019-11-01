@@ -13,6 +13,7 @@
         1.  [The Operating System: Linux](#org50d1643)
         2.  [Using a Remote Desktop on tigressdata: TurboVNC](#org9da15c9)
     4.  [Data Storage](#org4c1c2b6)
+    5.  [Data Import](#import)
 
 
 <a id="org71ddab1"></a>
@@ -118,10 +119,10 @@ You can only access `tigercpu`, `tigressdata` or `jupyterhub` in either of two s
 
 1.  you are on campus, or,
 2.  you are using the VPN. The instructions for installing the VPN on your machines differ based on your Operating Sytem:
-    
+
     -   [VPN: Secure Remote Access (SRA) instructions for MacOS](https://princeton.service-now.com/snap?id=kb_article&sys_id=952a27064f9ca20018ddd48e5210c719)
     -   [Secure Remote Access (SRA) instructions for Windows 10](https://princeton.service-now.com/snap?id=kb_article&sys_id=612a27064f9ca20018ddd48e5210c72a)
-    
+
     The [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) in the Frist Campus Center can help you install the VPN on your machine.
 
 
@@ -137,7 +138,7 @@ address is `jdoe@princeton.edu` then your `netid` is most likely
 `jdoe`.
 
 To be sure what you `netid` is, go to the University's web site:
-<https://www.princeton.edu> 
+<https://www.princeton.edu>
 and search for your name, click on the `People` result, look for the `NetID` field.
 ![img](./figures/find-my-netid.gif)
 
@@ -191,7 +192,7 @@ are two added benefits:
 
 1.  Your TurboVNC session is stays open until `tigressdata` is
     rebooted. This means that you can start working in one location,
-    close your laptop, go somewhere else and resume your work: the 
+    close your laptop, go somewhere else and resume your work: the
     processes you started are still running. This is to be contrasted
     to connected through the `ssh` client where your process are killed
     as soon as the `ssh` session is dropped.
@@ -252,9 +253,46 @@ get started, assuming that your are working in the Resplandy group,
 follow those steps:
 
 1.  Create your own directory in `/projects/GEOCLIM/LRGROUP` e.g.:
-    
+
         $ mkdir /projects/GEOCLIM/LRGROUP/$USER
-    
+
     where `$USER` should be automatically replaced by your `NetID`.
 2.  Store your data there.
 
+<a id="import"></a>
+
+## Data import
+
+Getting datasets onto the filesystem `tigress` (which can be accessed by all the machines above)
+can be done in multiple ways:
+
+1. [Download to local machine and transfer to remote](#down_ssh) (easy but only works for `medium sized` datasets, which fit onto your local harddisk)
+
+<!-- 2. [Upload via jupyterlab](#up_jlab)(very easy but should only be only used for small datasets)
+
+3. ... other methods are not documented yet -->
+
+<a id="down_ssh"></a>
+## Download to local machine and transfer to remote
+Download your dataset to a location on your harddrive (e.g. `~/Downloads`).
+
+From there you can copy the file to the remote filesystem by using
+```
+scp ~/Downloads/<yourfile> <username>@tigressdata.princeton.edu:/tigress/<username>/`
+```
+The words in `<...>` need to be replaced with specific filesnames and your princeton username.
+If you have set up SSH keys (e.g. if you log into `tigressdata` with `ssh tigressdata`),
+you can simplify the command above to:
+```
+scp ~/Downloads/<yourfile> tigressdata:/tigress/<username>/`
+```
+Now the file is in your folder on tigress and you can load it into your jupyter notebook,
+by using the path `/tigress/<username>/<yourfile>`.
+
+> Always make a `README_<yourfile>.txt` file that describes where you got the data (links)
+and what is in the file. Copy that `.txt` file like you did the datafile.
+
+
+<!-- <a id="up_jlab"></a>
+## Upload via jupyterhub
+You can upload files directly in the jupyterlab interface. These will usually land in your `/home` directory and thus this only works with small files. -->
