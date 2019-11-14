@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Getting an Account on the Computers](#org71ddab1)
-2.  [Using the Computers](#org5048b76)
-    1.  [Which Computer Should I Use for My Research Project?](#org6ee7904)
-    2.  [Logging in to the Computers](#orge4299b9)
-        1.  [tigercpu or tigressdata: use an ssh client](#org88ab6f5)
-        2.  [Jupyterhub](#org77c7583)
-        3.  [Connecting from off-campus: use the VPN](#org122dc44)
-        4.  [What is your username? Princeton NetID](#org2067966)
-    3.  [Using the Computers](#org3451942)
-        1.  [The Operating System: Linux](#org50d1643)
-        2.  [Using a Remote Desktop on tigressdata: TurboVNC](#org9da15c9)
-    4.  [Data Storage](#org4c1c2b6)
-    5.  [Data Import](#import)
+1.  [Getting an Account on the Computers](#org31743d4)
+2.  [Using the Computers](#orgeef3caf)
+    1.  [Which Computer Should I Use for My Research Project?](#org28eba1d)
+    2.  [Logging in to the Computers](#org886d72e)
+        1.  [tigercpu or tigressdata: use an ssh client](#org1966e7b)
+        2.  [Jupyterhub](#org03a7b2f)
+        3.  [Connecting from off-campus: use the VPN](#orgb1654c4)
+        4.  [What is your username? Princeton NetID](#org9c95c0a)
+    3.  [Using the Computers](#orgcfcbaae)
+        1.  [The Operating System: Linux](#orgf1d81f2)
+        2.  [Using a Remote Desktop on tigressdata: TurboVNC](#orga6b5bf4)
+    4.  [Data Storage](#org0657419)
+3.  [Going Further](#org0980544)
 
 
-<a id="org71ddab1"></a>
+<a id="org31743d4"></a>
 
 # Getting an Account on the Computers
 
@@ -30,12 +30,12 @@ An account on the `tigercpu` cluster gives you access to:
 -   `jupyter.rc`: a JupyterHub host.
 
 
-<a id="org5048b76"></a>
+<a id="orgeef3caf"></a>
 
 # Using the Computers
 
 
-<a id="org6ee7904"></a>
+<a id="org28eba1d"></a>
 
 ## Which Computer Should I Use for My Research Project?
 
@@ -66,12 +66,12 @@ So where should you start?
 -   **TODO: Add decision graph**.
 
 
-<a id="orge4299b9"></a>
+<a id="org886d72e"></a>
 
 ## Logging in to the Computers
 
 
-<a id="org88ab6f5"></a>
+<a id="org1966e7b"></a>
 
 ### tigercpu or tigressdata: use an ssh client
 
@@ -98,7 +98,7 @@ When you connecting on a remote host you may need to use the FQDN (Fully Qualifi
 -   `tigressdata.princeton.edu`.
 
 
-<a id="org77c7583"></a>
+<a id="org03a7b2f"></a>
 
 ### Jupyterhub
 
@@ -111,7 +111,7 @@ This section:
 explains how to run Jupyter notebooks on `jupyterhub`.
 
 
-<a id="org122dc44"></a>
+<a id="orgb1654c4"></a>
 
 ### Connecting from off-campus: use the VPN
 
@@ -119,14 +119,14 @@ You can only access `tigercpu`, `tigressdata` or `jupyterhub` in either of two s
 
 1.  you are on campus, or,
 2.  you are using the VPN. The instructions for installing the VPN on your machines differ based on your Operating Sytem:
-
+    
     -   [VPN: Secure Remote Access (SRA) instructions for MacOS](https://princeton.service-now.com/snap?id=kb_article&sys_id=952a27064f9ca20018ddd48e5210c719)
     -   [Secure Remote Access (SRA) instructions for Windows 10](https://princeton.service-now.com/snap?id=kb_article&sys_id=612a27064f9ca20018ddd48e5210c72a)
-
+    
     The [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) in the Frist Campus Center can help you install the VPN on your machine.
 
 
-<a id="org2067966"></a>
+<a id="org9c95c0a"></a>
 
 ### What is your username? Princeton NetID
 
@@ -138,17 +138,17 @@ address is `jdoe@princeton.edu` then your `netid` is most likely
 `jdoe`.
 
 To be sure what you `netid` is, go to the University's web site:
-<https://www.princeton.edu>
+<https://www.princeton.edu> 
 and search for your name, click on the `People` result, look for the `NetID` field.
 ![img](./figures/find-my-netid.gif)
 
 
-<a id="org3451942"></a>
+<a id="orgcfcbaae"></a>
 
 ## Using the Computers
 
 
-<a id="org50d1643"></a>
+<a id="orgf1d81f2"></a>
 
 ### The Operating System: Linux
 
@@ -174,6 +174,8 @@ You should spend some time learning the fundamentals of using the command line, 
         -   [Learning the shell - Lesson 9: Permissions](http://linuxcommand.org/lc3_lts0090.php)
         -   [Learning the shell - Lesson 10: Job Control](http://linuxcommand.org/lc3_lts0100.php)
         -   You can ignore the rest at the beginning: [LinuxCommand.org: Writing shell scripts.](http://linuxcommand.org/lc3_writing_shell_scripts.php)
+-   [Software Capentry: The Unix Shell](http://swcarpentry.github.io/shell-novice/)
+    -   and a summary can be found here: [Intro to Unix](https://earth-env-data-science.github.io/lectures/environment/intro_to_unix.html#intro-to-unix).
 -   If you prefer learning by watching videos, you can look at these:
     -   [LinkedIn: Unix for macOS Users](https://www.linkedin.com/learning/unix-for-mac-os-x-users/): Princeton University has a
         subcription to LinkedIn learning. Even though it is written for
@@ -181,7 +183,7 @@ You should spend some time learning the fundamentals of using the command line, 
     -   [O'Reilly: Linnux command line](https://learning.oreilly.com/videos/linux-command-line/9780134445533): Princeton University has a subscription to O'Reilly.
 
 
-<a id="org9da15c9"></a>
+<a id="orga6b5bf4"></a>
 
 ### Using a Remote Desktop on tigressdata: TurboVNC
 
@@ -192,7 +194,7 @@ are two added benefits:
 
 1.  Your TurboVNC session is stays open until `tigressdata` is
     rebooted. This means that you can start working in one location,
-    close your laptop, go somewhere else and resume your work: the
+    close your laptop, go somewhere else and resume your work: the 
     processes you started are still running. This is to be contrasted
     to connected through the `ssh` client where your process are killed
     as soon as the `ssh` session is dropped.
@@ -207,7 +209,7 @@ reference on how to use it on the RC systems is:
 The  [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) can also help you install it and use it on `tigressdata`
 
 
-<a id="org4c1c2b6"></a>
+<a id="org0657419"></a>
 
 ## Data Storage
 
@@ -253,46 +255,17 @@ get started, assuming that your are working in the Resplandy group,
 follow those steps:
 
 1.  Create your own directory in `/projects/GEOCLIM/LRGROUP` e.g.:
-
+    
         $ mkdir /projects/GEOCLIM/LRGROUP/$USER
-
+    
     where `$USER` should be automatically replaced by your `NetID`.
 2.  Store your data there.
 
-<a id="import"></a>
 
-## Data import
+<a id="org0980544"></a>
 
-Getting datasets onto the filesystem `tigress` (which can be accessed by all the machines above)
-can be done in multiple ways:
+# Going Further
 
-1. [Download to local machine and transfer to remote](#down_ssh) (easy but only works for `medium sized` datasets, which fit onto your local harddisk)
+-   This is an interesting online book that Julius Busecke contributed to:
+    [An Introduction to Earth and Environmental Data Science](<https://earth-env-data-science.github.io/intro>).
 
-<!-- 2. [Upload via jupyterlab](#up_jlab)(very easy but should only be only used for small datasets)
-
-3. ... other methods are not documented yet -->
-
-<a id="down_ssh"></a>
-## Download to local machine and transfer to remote
-Download your dataset to a location on your harddrive (e.g. `~/Downloads`).
-
-From there you can copy the file to the remote filesystem by using
-```
-scp ~/Downloads/<yourfile> <username>@tigressdata.princeton.edu:/tigress/<username>/`
-```
-The words in `<...>` need to be replaced with specific filesnames and your princeton username.
-If you have set up SSH keys (e.g. if you log into `tigressdata` with `ssh tigressdata`),
-you can simplify the command above to:
-```
-scp ~/Downloads/<yourfile> tigressdata:/tigress/<username>/`
-```
-Now the file is in your folder on tigress and you can load it into your jupyter notebook,
-by using the path `/tigress/<username>/<yourfile>`.
-
-> Always make a `README_<yourfile>.txt` file that describes where you got the data (links)
-and what is in the file. Copy that `.txt` file like you did the datafile.
-
-
-<!-- <a id="up_jlab"></a>
-## Upload via jupyterhub
-You can upload files directly in the jupyterlab interface. These will usually land in your `/home` directory and thus this only works with small files. -->
