@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Getting an Account on the Computers](#org31743d4)
-2.  [Using the Computers](#orgeef3caf)
-    1.  [Which Computer Should I Use for My Research Project?](#org28eba1d)
-    2.  [Logging in to the Computers](#org886d72e)
-        1.  [tigercpu or tigressdata: use an ssh client](#org1966e7b)
-        2.  [Jupyterhub](#org03a7b2f)
-        3.  [Connecting from off-campus: use the VPN](#orgb1654c4)
-        4.  [What is your username? Princeton NetID](#org9c95c0a)
-    3.  [Using the Computers](#orgcfcbaae)
-        1.  [The Operating System: Linux](#orgf1d81f2)
-        2.  [Using a Remote Desktop on tigressdata: TurboVNC](#orga6b5bf4)
-    4.  [Data Storage](#org0657419)
-3.  [Going Further](#org0980544)
+1.  [Getting an Account on the Computers](#orgd9bd0be)
+2.  [Using the Computers](#org546832a)
+    1.  [Which Computer Should I Use for My Research Project?](#orgbfb68ba)
+    2.  [Logging in to the Computers](#org4693319)
+        1.  [tigercpu or tigressdata: use an ssh client](#org0805a54)
+        2.  [Jupyterhub](#org44b97b9)
+        3.  [Connecting from off-campus: use the VPN](#org54d998c)
+        4.  [What is your username? Princeton NetID](#org67ff3ae)
+    3.  [Using the Computers](#org84a90e5)
+        1.  [The Operating System: Linux](#org2373e37)
+        2.  [Using a Remote Desktop on tigressdata: TurboVNC](#orgc114b33)
+    4.  [Data Storage](#orge3fe283)
+3.  [References for Further Learning](#org2a9a64a)
 
 
-<a id="org31743d4"></a>
+<a id="orgd9bd0be"></a>
 
 # Getting an Account on the Computers
 
@@ -30,12 +30,12 @@ An account on the `tigercpu` cluster gives you access to:
 -   `jupyter.rc`: a JupyterHub host.
 
 
-<a id="orgeef3caf"></a>
+<a id="org546832a"></a>
 
 # Using the Computers
 
 
-<a id="org28eba1d"></a>
+<a id="orgbfb68ba"></a>
 
 ## Which Computer Should I Use for My Research Project?
 
@@ -66,12 +66,12 @@ So where should you start?
 -   **TODO: Add decision graph**.
 
 
-<a id="org886d72e"></a>
+<a id="org4693319"></a>
 
 ## Logging in to the Computers
 
 
-<a id="org1966e7b"></a>
+<a id="org0805a54"></a>
 
 ### tigercpu or tigressdata: use an ssh client
 
@@ -98,7 +98,7 @@ When you connecting on a remote host you may need to use the FQDN (Fully Qualifi
 -   `tigressdata.princeton.edu`.
 
 
-<a id="org03a7b2f"></a>
+<a id="org44b97b9"></a>
 
 ### Jupyterhub
 
@@ -111,7 +111,7 @@ This section:
 explains how to run Jupyter notebooks on `jupyterhub`.
 
 
-<a id="orgb1654c4"></a>
+<a id="org54d998c"></a>
 
 ### Connecting from off-campus: use the VPN
 
@@ -126,7 +126,7 @@ You can only access `tigercpu`, `tigressdata` or `jupyterhub` in either of two s
     The [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) in the Frist Campus Center can help you install the VPN on your machine.
 
 
-<a id="org9c95c0a"></a>
+<a id="org67ff3ae"></a>
 
 ### What is your username? Princeton NetID
 
@@ -143,12 +143,12 @@ and search for your name, click on the `People` result, look for the `NetID` fie
 ![img](./figures/find-my-netid.gif)
 
 
-<a id="orgcfcbaae"></a>
+<a id="org84a90e5"></a>
 
 ## Using the Computers
 
 
-<a id="orgf1d81f2"></a>
+<a id="org2373e37"></a>
 
 ### The Operating System: Linux
 
@@ -183,7 +183,7 @@ You should spend some time learning the fundamentals of using the command line, 
     -   [O'Reilly: Linnux command line](https://learning.oreilly.com/videos/linux-command-line/9780134445533): Princeton University has a subscription to O'Reilly.
 
 
-<a id="orga6b5bf4"></a>
+<a id="orgc114b33"></a>
 
 ### Using a Remote Desktop on tigressdata: TurboVNC
 
@@ -209,7 +209,7 @@ reference on how to use it on the RC systems is:
 The  [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) can also help you install it and use it on `tigressdata`
 
 
-<a id="org0657419"></a>
+<a id="orge3fe283"></a>
 
 ## Data Storage
 
@@ -262,9 +262,9 @@ follow those steps:
 2.  Store your data there.
 
 
-<a id="org0980544"></a>
+<a id="org2a9a64a"></a>
 
-# Going Further
+# References for Further Learning
 
 -   This is an interesting online book that Julius Busecke contributed to:
     [An Introduction to Earth and Environmental Data Science](<https://earth-env-data-science.github.io/intro>).
