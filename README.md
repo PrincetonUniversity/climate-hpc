@@ -48,7 +48,7 @@ three machines `tigercpu`, `tigressdata` and `jupyterhub`:
     computational power.
 -   `tigressdata` is used for visualization and post-processing
     jobs. This machine runs a remote desktop which can make it easier to
-    interact with the data, **#todo add link to TurboVNC section**
+    interact with the data, 
 -   `jupyterhub` is a Jupyter notebook server. It runs the [JupyterHub](https://jupyterhub.readthedocs.io/en/stable/)
     software.
 
@@ -58,13 +58,12 @@ So where should you start?
     data, then `jupyterhub` is the best place,
 -   If you need to run other programs such as `Matlab`, `IDL`, `ncview`, on
     climate data, then use `tigressdata`. One easy way to use
-    tigressdata is through the remote desktop TurboVNC (**TODO: add link**).
+    tigressdata is through the remote desktop TurboVNC.
 -   When you get started, unless you are going to run simulations, you
     should only access tigressdata.
 -   If you need to run computationally intensive jobs, then you will
     need to use `tigercpu`. It's best to talk with your research advisor
     to determine whether your work will require tiger.
--   **TODO: Add decision graph**.
 
 
 <a id="org4693319"></a>
