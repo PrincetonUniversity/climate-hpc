@@ -118,10 +118,9 @@ explains how to run Jupyter notebooks on `jupyterhub`.
 You can only access `tigercpu`, `tigressdata` or `jupyterhub` in either of two scenarios:
 
 1.  you are on campus, or,
-2.  you are using the VPN. The instructions for installing the VPN on your machines differ based on your Operating Sytem:
+2.  you are using the VPN. The instructions for installing the VPN on your machine are here:
 
-    -   [VPN: Secure Remote Access (SRA) instructions for MacOS](https://princeton.service-now.com/snap?id=kb_article&sys_id=952a27064f9ca20018ddd48e5210c719)
-    -   [Secure Remote Access (SRA) instructions for Windows 10](https://princeton.service-now.com/snap?id=kb_article&sys_id=612a27064f9ca20018ddd48e5210c72a)
+    [GlobalProtect VPN: Installation Instructions](https://princeton.service-now.com/service?id=kb_article&sys_id=125a7bb11b6b4850435885d56b4bcb05)
 
     The [OIT Tech Clinic](https://princeton.service-now.com/snap?id=service_offering&sys_id=6484d6fa4f2e5200b28af7e18110c7c9) in the Frist Campus Center can help you install the VPN on your machine.
 
