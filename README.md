@@ -22,7 +22,7 @@
 # Getting an Account on the Computers
 
 To get an account on the Tigress system have your faculty advisor
-email David Luet with a request for a new account on `tiger`.
+send a request to cses@princeton.edu for a new account on `tiger`.
 
 An account on the `tigercpu` cluster gives you access to:
 
